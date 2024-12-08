@@ -1,0 +1,43 @@
+/* Style personnalisé */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/1.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 150px 0;
+}
+
+.product-card {
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.badge-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0;
+  }
+  .product-card img {
+    height: 250px;
+  }
+}
